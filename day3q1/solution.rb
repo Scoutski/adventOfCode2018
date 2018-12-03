@@ -24,7 +24,6 @@ def createGrid ()
   return grid
 end
 
-# [146,196,19,14]
 def fillInGrid (formattedLines, grid)
   filledInGrid = grid.dup
   for i in 0..formattedLines.length do
@@ -36,9 +35,6 @@ def fillInGrid (formattedLines, grid)
 
       for j in yStart..yFinish do
         for k in xStart..xFinish do
-          # puts filledInGrid[j][k]
-          # puts "HELLO"
-          # puts "#{j}, #{k}"
 
           if filledInGrid[j][k] == 'x'
             # do nothing
